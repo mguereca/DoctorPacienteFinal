@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DoctorPaciente</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_opciones">Opciones</string>
+    <string name="title_activity_doctores">Doctores</string>
+    <string name="title_activity_nuevo_doctor">NuevoDoctorActivity</string>
+    <string name="title_activity_pacientes">Pacientes</string>
+    <string name="letrero">Listado de Pacientes</string>
+    <string name="title_activity_citas">CitasActivity</string>
+    <string name="title_activity_nueva_cita">NuevaCitaActivity</string>
+</resources>

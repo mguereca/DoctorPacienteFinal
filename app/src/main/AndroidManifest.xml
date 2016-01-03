@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.manuel.doctorpaciente" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".controllers.Doctor_Paciente"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".controllers.OpcionesActivity"
+            android:label="@string/title_activity_opciones"
+            android:parentActivityName=".controllers.Doctor_Paciente"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.manuel.doctorpaciente.controllers.Doctor_Paciente" />
+        </activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="64b01e15b5747ce9fe137f977d7010846271613f" />
+
+        <activity
+            android:name=".controllers.DoctoresActivity"
+            android:label="@string/title_activity_doctores"
+            android:parentActivityName=".controllers.OpcionesActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.manuel.doctorpaciente.controllers.OpcionesActivity" />
+        </activity>
+        <activity
+            android:name=".controllers.NuevoDoctorActivity"
+            android:label="@string/title_activity_nuevo_doctor"
+            android:parentActivityName=".controllers.DoctoresActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.manuel.doctorpaciente.controllers.DoctoresActivity" />
+        </activity>
+        <activity
+            android:name=".controllers.NuevoPacienteActivity"
+            android:label="NuevoPacienteActivity"
+            android:parentActivityName=".controllers.PacientesActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.manuel.doctorpaciente.controllers.NuevoPacienteActivity" />
+        </activity>
+        <activity
+            android:name=".controllers.PacientesActivity"
+            android:label="@string/title_activity_pacientes"
+            android:parentActivityName=".controllers.OpcionesActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.manuel.doctorpaciente.controllers.OpcionesActivity" />
+        </activity>
+        <activity
+            android:name=".controllers.CitasActivity"
+            android:label="@string/title_activity_citas"
+            android:parentActivityName=".controllers.OpcionesActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.manuel.doctorpaciente.controllers.OpcionesActivity" />
+        </activity>
+        <activity
+            android:name=".controllers.NuevaCitaActivity"
+            android:label="@string/title_activity_nueva_cita"
+            android:parentActivityName=".controllers.CitasActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.manuel.doctorpaciente.controllers.CitasActivity" />
+        </activity>
+    </application>
+
+</manifest>
